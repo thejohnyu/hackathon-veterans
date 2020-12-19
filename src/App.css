@@ -60,5 +60,6 @@
 }
 
 .App-sub-header {
-  height: 50px;
+  height: 65px;
+  justify-self: start;
 }

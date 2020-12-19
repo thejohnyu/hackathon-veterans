@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     // width: "100%",
     // maxWidth: "36ch",
     borderColor: "#ff0000",
-    backgroundColor: theme.palette.background.paper,
+    // backgroundColor: theme.palette.background.paper,
   },
   bullet: {
     display: "inline-block",
@@ -102,13 +102,10 @@ export default function SimpleCard() {
   )
 
   return (
-    <>
-    <h3>Benefits</h3>
     <Card className={classes.root}>
       <List className={classes.root}>
         {listItems}
       </List>
     </Card>
-    </>
   );
 }

@@ -31,7 +31,6 @@ export default function FolderList() {
       title: "Outward Bound",
       subtitle: "Free Outdoor adventures",
       imageUrl: "https://www.outwardbound.org/media/images/ob-fb-logo-2.png",
-      upvote: 512,
       href: "https://www.outwardbound.org/course-finder/?age=&programs%5B%5D=108"
     }
   ];

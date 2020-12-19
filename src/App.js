@@ -10,13 +10,12 @@ function App() {
       <PrimarySearchAppBar />
       <main className="App-main">
         <div className="App-left-column">
+          <header className="App-sub-header"><h3>Benefits and Resources</h3></header>
           <SimpleCard />
         </div>
         <div className="App-right-column">
           <header className="App-sub-header"><h3>Veteran Deals</h3></header>
           <FolderList />
-          {/* <header className="App-sub-header">Trending Benefits</header>
-          <FolderList /> */}
         </div>
       </main>
       <footer className="App-footer"></footer>
