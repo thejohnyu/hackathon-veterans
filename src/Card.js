@@ -12,6 +12,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import { blue } from "@material-ui/core/colors";
+import Vote from "./Vote";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -74,8 +75,8 @@ export default function SimpleCard() {
     
   ];
 
-  const listItems = newData.map((cur) => 
-    <ListItem alignItems="flex-start">
+  const listItems = newData.map((cur, index) => 
+    <ListItem alignItems="flex-start" key={index}>
       <ListItemAvatar>
         <Avatar alt="" src="/static/images/avatar/1.jpg" />
       </ListItemAvatar>
@@ -95,6 +96,7 @@ export default function SimpleCard() {
           </React.Fragment>
         }
       />
+      <Vote />
     </ListItem>
   )
 
