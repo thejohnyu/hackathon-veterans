@@ -71,6 +71,7 @@ export default function SimpleCard() {
       imageUrl: "http://image.com",
       upvote: 512,
     },
+    
   ];
 
   const listItems = newData.map((cur) => 
