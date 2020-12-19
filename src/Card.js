@@ -11,6 +11,7 @@ import Divider from '@material-ui/core/Divider';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
+import { blue } from "@material-ui/core/colors";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -18,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
         // height: 800,
         // width: "100%",
         // maxWidth: "36ch",
+        borderColor: "#ff0000",
         backgroundColor: theme.palette.background.paper,
       },
       bullet: {
