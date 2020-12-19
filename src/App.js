@@ -13,13 +13,13 @@ function App() {
           <SimpleCard />
         </div>
         <div className="App-right-column">
-          <header className="App-sub-header">Upcoming Products</header>
+          <header className="App-sub-header">Benefits You Follow</header>
           <FolderList />
-          <header className="App-sub-header">Hiring Now</header>
+          <header className="App-sub-header">Trending Benefits</header>
           <FolderList />
         </div>
       </main>
-      <footer className="App-footer">my footer</footer>
+      <footer className="App-footer"></footer>
     </div>
   );
 }

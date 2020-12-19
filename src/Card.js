@@ -101,10 +101,13 @@ export default function SimpleCard() {
   )
 
   return (
+    <>
+    <h3>Benefits</h3>
     <Card className={classes.root}>
       <List className={classes.root}>
         {listItems}
       </List>
     </Card>
+    </>
   );
 }

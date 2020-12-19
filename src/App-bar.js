@@ -10,6 +10,9 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import Button from '@material-ui/core/Button';              //Button
+import Link from '@material-ui/core/Link';
+
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
@@ -76,6 +79,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       display: 'none',
     },
+  },
+  logo: {
+    maxWidth: 160,
+  },
+  atags: {
+    marginLeft: 15,
   },
 }));
 
@@ -163,25 +172,33 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static">
+      <AppBar position="static"
+      >
         <Toolbar>
-          <IconButton
+        
+        
+     
+
+          {/* <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
+
+
+
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            UpVet
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Search…"
+              placeholder="Find veteran benefits..."
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
@@ -189,6 +206,22 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
+          <Button variant="contained" color="secondary">
+          Search
+          </Button>
+         
+          <Link href="#" style={{ color: "white"}} className={classes.atags}>
+          Job
+          </Link>
+          <Link href="#" style={{ color: "white"}} className={classes.atags}>
+          Volunteer
+          </Link>
+          <Link href="#" style={{ color: "white"}} className={classes.atags}>
+          Events
+          </Link>
+
+
+
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
