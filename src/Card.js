@@ -1,17 +1,12 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Divider from "@material-ui/core/Divider";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
-import { blue } from "@material-ui/core/colors";
 import Vote from "./Vote";
 
 const useStyles = makeStyles((theme) => ({
@@ -40,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SimpleCard() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
+  // const bull = <span className={classes.bullet}>•</span>;
   const newData = [
     {
       title: "Operation Code",
@@ -83,7 +78,7 @@ export default function SimpleCard() {
   const listItems = newData.map((cur, index) =>
     <ListItem alignItems="flex-start" key={index}>
       <ListItemAvatar>
-        <a href={cur.href} target="_blank">
+        <a href={cur.href} target="_blank" rel="noopener noreferrer">
           <Avatar alt={cur.title} src={cur.imageUrl} />
         </a>
       </ListItemAvatar>
