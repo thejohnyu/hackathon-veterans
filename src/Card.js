@@ -15,9 +15,9 @@ import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        height: 800,
-        width: "100%",
-        maxWidth: "36ch",
+        // height: 800,
+        // width: "100%",
+        // maxWidth: "36ch",
         backgroundColor: theme.palette.background.paper,
       },
       bullet: {

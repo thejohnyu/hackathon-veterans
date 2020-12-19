@@ -13,9 +13,9 @@ function App() {
           <SimpleCard />
         </div>
         <div className="App-right-column">
-          <header>Upcoming Products</header>
+          <header className="App-sub-header">Upcoming Products</header>
           <FolderList />
-          <header>Hiring Now</header>
+          <header className="App-sub-header">Hiring Now</header>
           <FolderList />
         </div>
       </main>
