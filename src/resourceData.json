@@ -1,0 +1,35 @@
+{
+    "results": [
+        {
+            "title": "Resource 1",
+            "subtitle": "I'm pretty cool",
+            "imageUrl": "http://image.com",
+            "upvote": 512
+        },
+        {
+            "title": "Resource 1",
+            "subtitle": "I'm pretty cool",
+            "imageUrl": "http://image.com",
+            "upvote": 512
+        },
+        {
+            "title": "Resource 1",
+            "subtitle": "I'm pretty cool",
+            "imageUrl": "http://image.com",
+            "upvote": 512
+        },
+        {
+            "title": "Resource 1",
+            "subtitle": "I'm pretty cool",
+            "imageUrl": "http://image.com",
+            "upvote": 512
+        },
+        {
+            "title": "Resource 1",
+            "subtitle": "I'm pretty cool",
+            "imageUrl": "http://image.com",
+            "upvote": 512
+        }
+
+    ]
+}
