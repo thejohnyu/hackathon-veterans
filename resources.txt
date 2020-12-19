@@ -1,0 +1,31 @@
+Title: Operation Code
+Thumbnail: https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Foperation_code&psig=AOvVaw1c9bfxd-un_Bt_jeNqWyH1&ust=1608427762379000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCICuzt7x2O0CFQAAAAAdAAAAABAI
+Image: https://www.google.com/url?sa=i&url=https%3A%2F%2Foperationcode.org%2F&psig=AOvVaw1c9bfxd-un_Bt_jeNqWyH1&ust=1608427762379000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCICuzt7x2O0CFQAAAAAdAAAAABAO
+Link: https://operationcode.org/ 
+Desc: Operation Code is a non-profit charity helping the military community learn software development, enter the tech industry, and code the future.
+
+Title: Vets2Industry
+Thumbnail: 
+Image: 
+Link: https://vets2industry.com/ 
+Desc: If you’re a military member in the middle of transitioning… If you’re a dependent in need of some support… If you’re a veteran needing a job FAST… Or you’re a company or organization in need of some skilled employees who want a career, not just a job… 
+
+Title: FourBlock
+Thumbnail: 
+Image: 
+Link: https://fourblock.org/
+Desc: FourBlock is a 501(c)(3) non-profit organization dedicated to supporting returning service members in their transition from military service to meaningful civilian careers. Now in its 10th year, our flagship Career Readiness Program is taught by corporate executives in major cities across the U.S. and now serves more than 600 transitioning veterans annually.
+Our mission is to build a nationwide community that all transitioning veterans and service members may connect with wherever they are locally to gain access to the career development resources, industry exploration, and professional network they need to find their new purpose and transition successfully into the right careers.
+
+Title: Oplign
+Thumbnail: 
+Image: 
+Link: https://oplign.com
+Desc: Oplign is an AI-enabled application that gathers all market data for streamlined workforce configuration, employee optimization, and organizational design. It is the easy button for talent.
+
+
+Title: Vet Tec
+Thumbnail: 
+Image: 
+Link: https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/
+Desc: If you want to gain computer experience to start or advance your career in the high-technology industry, find out if you’re eligible for our Veteran Employment Through Technology Education Courses (VET TEC) program that matches you with a leading training provider to help you develop high-tech skills.
