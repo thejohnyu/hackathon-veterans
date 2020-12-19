@@ -38,19 +38,25 @@
 
 .App-main {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   height: 100vh;
+  grid-template-columns: 600px 300px;
 }
 
 .App-right-column {
   display: grid;
   justify-content: center;
-  width: 600px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 50px 1fr;
+  margin-top: 50px;
 }
 
 .App-left-column {
   display: grid;
   justify-content: center;
-  align-items: center;
+  margin-top: 50px;
+}
+
+.App-sub-header {
+  height: 50px;
 }
