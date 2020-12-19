@@ -4,7 +4,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
@@ -41,6 +41,22 @@ const useStyles = makeStyles((theme) => ({
 export default function SimpleCard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
+  const [data, setData] = useState();
+
+  const getData =()=>{
+    fetch('resourceData.json', {headers:{'Content-Type': 'application/json', 'Accept': 'application/json'}})
+    .then(function(res){
+      console.log(res);
+      return res.json();
+    })
+    .then(function(mj){
+      console.log(mj);
+      setData(mj)
+    });
+  }
+  useEffect(()=>{
+    getData();
+  })
 
   return (
     <Card className={classes.root}>
