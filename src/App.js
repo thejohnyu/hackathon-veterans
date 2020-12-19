@@ -1,14 +1,23 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import SimpleCard from "./Card";
+import PrimarySearchAppBar from "./App-bar";
+import FolderList from "./Folder";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">My new header</header>
+      <PrimarySearchAppBar />
       <main className="App-main">
-        <SimpleCard />
+        <div className="App-left-column">
+          <SimpleCard />
+        </div>
+        <div className="App-right-column">
+          <header>Upcoming Products</header>
+          <FolderList />
+          <header>Hiring Now</header>
+          <FolderList />
+        </div>
       </main>
       <footer className="App-footer">my footer</footer>
     </div>

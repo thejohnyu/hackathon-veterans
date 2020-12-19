@@ -34,10 +34,22 @@
 .App-footer {
   height: 100px;
   display: flex;
-  background: red;
 }
 
 .App-main {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.App-right-column {
+  display: grid;
+  justify-content: center;
+  width: 600px;
+}
+
+.App-left-column {
   display: grid;
   justify-content: center;
   align-items: center;
