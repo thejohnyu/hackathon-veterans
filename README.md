@@ -7,7 +7,7 @@
 - [x] Add buttons for planned features (Jobs, Volunteer, Events)  - Alex
 - [ ] Add logo and slogan - Alex
 - [ ] Populate Resource List (General, Volunteer, Deals/Discounts) - Matt
-- [ ] Link site to pull data from json
+- [x] Link site to pull data from json
 
 ### Planned Features
 - [ ] General Page
