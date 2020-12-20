@@ -1,6 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import Typography from "@material-ui/core/Typography";
 import React from "react";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -8,8 +7,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import Vote from "./Vote";
-import Divider from '@material-ui/core/Divider';
-import Badge from '@material-ui/core/Badge';
+import { Chip } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -88,63 +86,7 @@ export default function SimpleCard() {
       upvote: 512,
       href: "https://www.veterati.com/",
       tags: ["mentorship", "career"]
-    },
-    {
-      title: "Vet Tec",
-      subtitle: "Veteran Employment Through Technology",
-      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
-      upvote: 512,
-      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
-    },
-    {
-      title: "Vet Tec",
-      subtitle: "Veteran Employment Through Technology",
-      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
-      upvote: 512,
-      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
-    },
-    {
-      title: "Vet Tec",
-      subtitle: "Veteran Employment Through Technology",
-      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
-      upvote: 512,
-      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
-    },
-    {
-      title: "Vet Tec",
-      subtitle: "Veteran Employment Through Technology",
-      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
-      upvote: 512,
-      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
-    },
-    {
-      title: "Vet Tec",
-      subtitle: "Veteran Employment Through Technology",
-      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
-      upvote: 512,
-      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
-    },
-    {
-      title: "Vet Tec",
-      subtitle: "Veteran Employment Through Technology",
-      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
-      upvote: 512,
-      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
-    },
-    {
-      title: "Vet Tec",
-      subtitle: "Veteran Employment Through Technology",
-      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
-      upvote: 512,
-      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
-    },
-    {
-      title: "Vet Tec",
-      subtitle: "Veteran Employment Through Technology",
-      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
-      upvote: 512,
-      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
-    },
+    }
 
   ];
 
@@ -162,11 +104,12 @@ export default function SimpleCard() {
             {cur.subtitle}
 
             <br></br><br></br>
-            <Badge badgeContent={cur.tags} color="primary">
-            </Badge>
+            {cur.tags.map((tag)=>{
+              return <Chip label={tag} color="primary"></Chip>
+            })}
+
           </React.Fragment>
         }
-
       />
       <Vote />
     </ListItem>
