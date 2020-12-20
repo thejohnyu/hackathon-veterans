@@ -222,11 +222,6 @@ export default function PrimarySearchAppBar() {
           <Link href="#" style={{ color: "white"}} className={classes.atags}>
           Events
           </Link>
-          <Link href="#" style={{ color: "white"}} className={classes.atags}>
-          More ...
-          </Link>
-
-
 
           <div className={classes.grow} />
         
