@@ -164,7 +164,7 @@ export default function SimpleCard() {
   };
 
   const clearData = () => {
-    setDatas(newData = newData);
+    setDatas(newData);
   }
 
   const listItems = datas.map((cur, index) =>

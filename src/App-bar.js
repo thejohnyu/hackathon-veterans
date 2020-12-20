@@ -222,6 +222,9 @@ export default function PrimarySearchAppBar() {
           <Link href="#" style={{ color: "white"}} className={classes.atags}>
           Travel
           </Link>
+          <Link href="#" style={{ color: "white"}} className={classes.atags}>
+          Education
+          </Link>
 
           <div className={classes.grow} />
         
