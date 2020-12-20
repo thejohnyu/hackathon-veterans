@@ -39,7 +39,7 @@
 .App-main {
   display: grid;
   justify-content: center;
-  column-gap:30px;
+  column-gap:20px;
   /* height: 100vh; */
   grid-template-columns: 600px 300px;
 }
