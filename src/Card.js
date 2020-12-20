@@ -50,6 +50,14 @@ export default function SimpleCard() {
       tags: ["volunteer"]
     },
     {
+      title: "SANS Institute VetSuccess Academy",
+      subtitle: "Cybersecurity Training and Certification",
+      imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQFXP6rIfo489A/company-logo_200_200/0?e=2159024400&v=beta&t=s5xq6jsYTZRx9tB6AebeV0F3Z6NRCEwi9Kwx1WKQKWU",
+      upvote: 512,
+      href: "https://www.sans.org/cybertalent/cybersecurity-career/vetsuccess-academy",
+      tags: ["technology", "cybersecurity", "training"]
+    },
+    {
       title: "Operation Code",
       subtitle: "Deploy the future",
       imageUrl: "https://pbs.twimg.com/profile_images/820688452039614465/QOOekCzS_400x400.jpg",
