@@ -47,6 +47,12 @@ export default function DiscountList() {
             imageUrl: "https://c.static-nike.com/a/images/w_1920,c_limit/mdbgldn6yg1gg88jomci/image.jpg",
             href: "https://www.nike.com"
         },
+        {
+            title: "Navy Federal: RealtyPlus Program",
+            subtitle: "Cashback when using partnered realtors",
+            imageUrl: "https://pbs.twimg.com/profile_images/963505271728427011/XoP8-Xam_400x400.jpg",
+            href: "https://realestateperk.com/RealtyPlus/"
+        },
     ];
 
     const discountDataItems = discountData.map((data, index) =>
