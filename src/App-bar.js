@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('md')]: {
-      width: '20ch',
+      width: '36ch',
     },
   },
   sectionDesktop: {
@@ -84,6 +84,12 @@ const useStyles = makeStyles((theme) => ({
   atags: {
     marginLeft: 15,
   },
+  logRegRight: {
+    marginRight: 17,
+  },
+  logRegLeft: {
+    marginRight: 7,
+  }
 }));
 
 export default function PrimarySearchAppBar() {
@@ -217,43 +223,20 @@ export default function PrimarySearchAppBar() {
           <Link href="#" style={{ color: "white"}} className={classes.atags}>
           Events
           </Link>
+          <Link href="#" style={{ color: "white"}} className={classes.atags}>
+          More ...
+          </Link>
 
 
 
           <div className={classes.grow} />
-          <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <MailIcon />
-              </Badge>
-            </IconButton>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
-            <IconButton
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >
-              <AccountCircle />
-            </IconButton>
-          </div>
-          <div className={classes.sectionMobile}>
-            <IconButton
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
-          </div>
+        
+          <Button variant="contained" color="primary" href="#contained-buttons" className={classes.logRegLeft}>
+            Log In
+            </Button>
+          <Button variant="contained" color="secondary" href="#contained-buttons" className={classes.logRegRight}>
+            Sign Up
+            </Button>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
