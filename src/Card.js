@@ -58,12 +58,44 @@ export default function SimpleCard() {
       tags: ["technology"]
     },
     {
+      title: "Wounded Warrior Project",
+      subtitle: "Offers a variety of programs, services and events for wounded veterans.",
+      imageUrl: "https://www.woundedwarriorproject.org/media/txmlqlcd/wwp_logo_black.png",
+      upvote: 512,
+      href: "https://www.woundedwarriorproject.org/",
+      tags: ["charity", "medical", "therapy", "counseling"]
+    },
+    {
+      title: "Vet Tec",
+      subtitle: "Veteran Employment Through Technology",
+      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
+      upvote: 512,
+      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/",
+      tags: ["career", "technology"]
+    },
+    {
+      title: "Bastards Canteen",
+      subtitle: "Down-home joint dishing up dogs, burgers & brews in casual digs with military-themed decor.",
+      imageUrl: "https://bastardscanteen.com/wp-content/uploads/2020/11/Chicken-Sandwich.jpg",
+      upvote: 512,
+      href: "https://bastardscanteen.com/",
+      tags: ["restaurant", "veteran owned", "beer"]
+    },
+    {
       title: "Vets2Industry",
       subtitle: "PEOPLE FIRST, VETERANS AND THEIR FAMILIES ALWAYS",
       imageUrl: "https://vets2industry.com/wp-content/uploads/2019/02/Untitled-2-e1576790485230.png",
       upvote: 512,
       href: "https://vets2industry.com/ ",
       tags: ["career", "spouse"]
+    },
+    {
+      title: "Save A Warrior",
+      subtitle: "Provides an innovative and effective \"war detox\" program for Warriors suffering from Post Traumatic Stress.",
+      imageUrl: "https://static1.squarespace.com/static/5494a4e8e4b0d7d16a2b3486/t/5cb62f819b747a56b311fe7a/1607100564006/?format=1500w",
+      upvote: 512,
+      href: "https://saveawarrior.org/home ",
+      tags: ["suicide prevention", "counseling", "holistic service", "post-traumatic stress"]
     },
     {
       title: "FourBlock",
@@ -74,6 +106,14 @@ export default function SimpleCard() {
       tags: ["career", "networking"]
     },
     {
+      title: "Wreaths across America",
+      subtitle: "Wreaths Across America coordinates wreath-laying ceremonies at more than 2,100 locations across the United States, at sea and abroad",
+      imageUrl: "https://cdn11.bigcommerce.com/s-x8kcwz9kod/stencil/cb36b3c0-0015-0139-4088-0242ac11000c/e/dbb68ea0-1290-0137-c403-06715e5dd399/img/sponsorimg.jpg",
+      upvote: 512,
+      href: "https://donate.wreathsacrossamerica.org/",
+      tags: ["volunteer", "memorial", "fundraising"]
+    },
+    {
       title: "Oplign",
       subtitle: "Where Opportunities Align",
       imageUrl: "https://i.vimeocdn.com/portrait/38627916_120x120.jpg",
@@ -82,21 +122,30 @@ export default function SimpleCard() {
       tags: ["career", "spouse"]
     },
     {
-      title: "Vet Tec",
-      subtitle: "Veteran Employment Through Technology",
-      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
-      upvote: 512,
-      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/",
-      tags: ["training", "technology"]
-    },
-    {
       title: "Veterati",
       subtitle: "America's mentoring network for the military",
       imageUrl: "https://pbs.twimg.com/profile_images/662354554768498688/JYaeAgU5_400x400.png",
       upvote: 512,
       href: "https://www.veterati.com/",
       tags: ["mentorship", "career"]
-    }
+    },
+    {
+      title: "Save The Brave",
+      subtitle: "To Connect Veterans Through Outreach Programs To Build Strength of Character",
+      imageUrl: "https://savethebrave.org/wp-content/uploads/2017/05/STB-LOGO-L.jpg",
+      upvote: 512,
+      href: "https://savethebrave.org/",
+      tags: ["mentorship", "nonprofit", "support network", "stress management"]
+    },
+    {
+      title: "Heroes and Horses",
+      subtitle: "The H&H program inspires veterans to move beyond the difficulties experience from years of war, towards of life of restoration and hope.",
+      imageUrl: "https://images.squarespace-cdn.com/content/v1/5d543e7f3b4c5600017d9eab/1602008753983-MSNDIF4EN2WMDM3M5SUK/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/TY1A8109+%281%29.jpg?format=750w",
+      upvote: 512,
+      href: "https://www.heroesandhorses.org/",
+      tags: ["adventure", "educational", "volunteer", "teamwork"]
+    },
+    
 
   ];
 
