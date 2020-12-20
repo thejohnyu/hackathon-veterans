@@ -8,6 +8,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import Vote from "./Vote";
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,6 +16,8 @@ const useStyles = makeStyles((theme) => ({
     // width: "100%",
     // maxWidth: "36ch",
     borderColor: "#ff0000",
+
+
     // backgroundColor: theme.palette.background.paper,
   },
   bullet: {
@@ -42,7 +45,8 @@ export default function SimpleCard() {
       subtitle: "Deploy the future",
       imageUrl: "https://pbs.twimg.com/profile_images/820688452039614465/QOOekCzS_400x400.jpg",
       upvote: 512,
-      href: "https://operationcode.org/"
+      href: "https://operationcode.org/",
+      tags: ["career", "test"]
     },
     {
       title: "Vets2Industry",
@@ -72,6 +76,69 @@ export default function SimpleCard() {
       upvote: 512,
       href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
     },
+    {
+      title: "Veterati",
+      subtitle: "America's mentoring network for the military",
+      imageUrl: "https://pbs.twimg.com/profile_images/662354554768498688/JYaeAgU5_400x400.png",
+      upvote: 512,
+      href: "https://www.veterati.com/"
+    },
+    {
+      title: "Vet Tec",
+      subtitle: "Veteran Employment Through Technology",
+      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
+      upvote: 512,
+      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
+    },
+    {
+      title: "Vet Tec",
+      subtitle: "Veteran Employment Through Technology",
+      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
+      upvote: 512,
+      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
+    },
+    {
+      title: "Vet Tec",
+      subtitle: "Veteran Employment Through Technology",
+      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
+      upvote: 512,
+      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
+    },
+    {
+      title: "Vet Tec",
+      subtitle: "Veteran Employment Through Technology",
+      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
+      upvote: 512,
+      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
+    },
+    {
+      title: "Vet Tec",
+      subtitle: "Veteran Employment Through Technology",
+      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
+      upvote: 512,
+      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
+    },
+    {
+      title: "Vet Tec",
+      subtitle: "Veteran Employment Through Technology",
+      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
+      upvote: 512,
+      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
+    },
+    {
+      title: "Vet Tec",
+      subtitle: "Veteran Employment Through Technology",
+      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
+      upvote: 512,
+      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
+    },
+    {
+      title: "Vet Tec",
+      subtitle: "Veteran Employment Through Technology",
+      imageUrl: "https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Logo.PNG",
+      upvote: 512,
+      href: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/vettec-high-tech-program/"
+    },
 
   ];
 
@@ -86,17 +153,11 @@ export default function SimpleCard() {
         primary={cur.title}
         secondary={
           <React.Fragment>
-            <Typography
-              component="span"
-              variant="body2"
-              className={classes.inline}
-              color="textPrimary"
-            >
-            </Typography>
             {cur.subtitle}
           </React.Fragment>
         }
       />
+      <ListItemText primary="Category" secondary={cur.tags + ", "} />
       <Vote />
     </ListItem>
   )
