@@ -202,7 +202,7 @@ export default function PrimarySearchAppBar() {
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Find veteran benefits..."
+              placeholder="Discover veteran benefits..."
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
