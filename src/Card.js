@@ -9,12 +9,14 @@ import Avatar from "@material-ui/core/Avatar";
 import Vote from "./Vote";
 import { Chip } from "@material-ui/core";
 
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     borderColor: "#ff0000",
     marginBottom: "2rem",
-     backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.paper,
   },
   bullet: {
     display: "inline-block",
@@ -34,8 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SimpleCard() {
   const classes = useStyles();
-  // const bull = <span className={classes.bullet}>•</span>;
-  const newData = [
+  let newData = [
     {
       title: "Operation Code",
       subtitle: "Deploy the future",
@@ -87,8 +88,23 @@ export default function SimpleCard() {
 
   ];
 
-  const listItems = newData.map((cur, index) =>
-    <Card className={classes.root}>
+  const [datas, setDatas] = React.useState(newData);
+
+
+  const searchResources = (searchTerm) => {
+    console.log(searchTerm);
+    let newResources = [];
+    for (var i = 0; i < newData.length; i++) {
+      if (newData[i].tags.includes(searchTerm)) {
+        newResources.push(newData[i]);
+      }
+    }
+
+    setDatas(newData = newResources);
+  };
+
+  const listItems = datas.map((cur, index) =>
+    <Card className={classes.root} key={index}>
       <List>
         <ListItem alignItems="flex-start" key={index}>
           <ListItemAvatar>
@@ -101,29 +117,21 @@ export default function SimpleCard() {
             secondary={
               <React.Fragment>
                 {cur.subtitle}
-
                 <br></br><br></br>
                 {cur.tags.map((tag) => {
-                  return <Chip label={tag} color="primary"></Chip>
-                })}
-
+            return <Chip label={tag} key={tag} color="primary" onClick={() => searchResources(tag)}></Chip>
+          })}
               </React.Fragment>
             }
           />
+         
           <Vote />
         </ListItem>
-        {/* <Divider variant="inset" component="li" /> */}
       </List>
     </Card>
-
   )
 
   return (
-    //     <Card className={classes.root}>
-    // <List className={classes.root}>
-    //       {listItems}
-    //       </List>
-    //     </Card>
     <div>{listItems}</div>
   );
 }
