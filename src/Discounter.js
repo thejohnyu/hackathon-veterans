@@ -63,8 +63,8 @@ export default function DiscountList() {
     )
 
     return (
-
-        <div> <h3>Veteran Discounts Near You</h3>
+        <div>
+            <h3>Veteran Discounts Near You</h3>
             {discountDataItems}
         </div>
     );

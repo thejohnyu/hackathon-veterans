@@ -214,13 +214,13 @@ export default function PrimarySearchAppBar() {
           </Button>
          
           <Link href="#" style={{ color: "white"}} className={classes.atags}>
-          Job
+          Career
           </Link>
           <Link href="#" style={{ color: "white"}} className={classes.atags}>
           Volunteer
           </Link>
           <Link href="#" style={{ color: "white"}} className={classes.atags}>
-          Events
+          Travel
           </Link>
 
           <div className={classes.grow} />
