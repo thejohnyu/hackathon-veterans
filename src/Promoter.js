@@ -32,6 +32,12 @@ export default function PromoterList() {
             subtitle: "",
             imageUrl: "https://www.va.gov/HOMELESS/images/slide-News-and-Updates_500x275.jpg",
             href: "https://www.va.gov/homeless/"
+        },
+        {
+            title: "Covid-19 Small Business Relief",
+            subtitle: "Assistance for Businesses impacted by Covid-19",
+            imageUrl: "https://www.wistv.com/resizer/oNNi6OFezFeGJfXya-VwZw8Ib7E=/1200x600/cloudfront-us-east-1.images.arcpublishing.com/raycom/KBZNYHBVDJAIZIHUFQOI34EMIA.jpg",
+            href: "https://www.va.gov/OSDBU/COVID-19"
         }
     ];
 
