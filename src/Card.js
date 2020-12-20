@@ -8,7 +8,7 @@ import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import Vote from "./Vote";
 import { Chip } from "@material-ui/core";
-
+import Button from '@material-ui/core/Button';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -32,6 +32,10 @@ const useStyles = makeStyles((theme) => ({
   inline: {
     display: "inline",
   },
+  butpos:{
+    float:"right",
+    marginBottom: "15px"
+  }
 }));
 
 export default function SimpleCard() {
@@ -92,7 +96,6 @@ export default function SimpleCard() {
 
 
   const searchResources = (searchTerm) => {
-    console.log(searchTerm);
     let newResources = [];
     for (var i = 0; i < newData.length; i++) {
       if (newData[i].tags.includes(searchTerm)) {
@@ -103,7 +106,12 @@ export default function SimpleCard() {
     setDatas(newData = newResources);
   };
 
+  const clearData = () => {
+    setDatas(newData = newData);
+  }
+
   const listItems = datas.map((cur, index) =>
+
     <Card className={classes.root} key={index}>
       <List>
         <ListItem alignItems="flex-start" key={index}>
@@ -119,12 +127,11 @@ export default function SimpleCard() {
                 {cur.subtitle}
                 <br></br><br></br>
                 {cur.tags.map((tag) => {
-            return <Chip label={tag} key={tag} color="primary" onClick={() => searchResources(tag)}></Chip>
-          })}
+                  return <Chip label={tag} key={tag} color="primary" onClick={() => searchResources(tag)}></Chip>
+                })}
               </React.Fragment>
             }
           />
-         
           <Vote />
         </ListItem>
       </List>
@@ -132,6 +139,11 @@ export default function SimpleCard() {
   )
 
   return (
-    <div>{listItems}</div>
+
+    <div><h3>Benefits and Resources</h3>
+      <Button variant="contained" color="secondary" onClick={() => clearData()} className={classes.butpos}>
+        Clear
+      </Button>
+      {listItems}</div>
   );
 }
