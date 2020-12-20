@@ -3,10 +3,21 @@ import "./App.css";
 import SimpleCard from "./Card";
 import PrimarySearchAppBar from "./App-bar";
 import FolderList from "./Folder";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%",
+    borderColor: "#ff0000",
+    marginBottom: "2rem",
+     backgroundColor: theme.palette.background.default,
+  },}));
+
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
+    <div className={classes.root}>
       <PrimarySearchAppBar />
       <main className="App-main">
         <div className="App-left-column">

@@ -11,13 +11,10 @@ import { Chip } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // height: 800,
-    // width: "100%",
-    // maxWidth: "36ch",
+    width: "100%",
     borderColor: "#ff0000",
-
-
-    // backgroundColor: theme.palette.background.paper,
+    marginBottom: "2rem",
+     backgroundColor: theme.palette.background.paper,
   },
   bullet: {
     display: "inline-block",
@@ -91,35 +88,42 @@ export default function SimpleCard() {
   ];
 
   const listItems = newData.map((cur, index) =>
-    <ListItem alignItems="flex-start" key={index}>
-      <ListItemAvatar>
-        <a href={cur.href} target="_blank" rel="noopener noreferrer">
-          <Avatar alt={cur.title} src={cur.imageUrl} />
-        </a>
-      </ListItemAvatar>
-      <ListItemText
-        primary={cur.title}
-        secondary={
-          <React.Fragment>
-            {cur.subtitle}
+    <Card className={classes.root}>
+      <List>
+        <ListItem alignItems="flex-start" key={index}>
+          <ListItemAvatar>
+            <a href={cur.href} target="_blank" rel="noopener noreferrer">
+              <Avatar alt={cur.title} src={cur.imageUrl} />
+            </a>
+          </ListItemAvatar>
+          <ListItemText
+            primary={cur.title}
+            secondary={
+              <React.Fragment>
+                {cur.subtitle}
 
-            <br></br><br></br>
-            {cur.tags.map((tag)=>{
-              return <Chip label={tag} color="primary"></Chip>
-            })}
+                <br></br><br></br>
+                {cur.tags.map((tag) => {
+                  return <Chip label={tag} color="primary"></Chip>
+                })}
 
-          </React.Fragment>
-        }
-      />
-      <Vote />
-    </ListItem>
+              </React.Fragment>
+            }
+          />
+          <Vote />
+        </ListItem>
+        {/* <Divider variant="inset" component="li" /> */}
+      </List>
+    </Card>
+
   )
 
   return (
-    <Card className={classes.root}>
-      <List className={classes.root}>
-        {listItems}
-      </List>
-    </Card>
+    //     <Card className={classes.root}>
+    // <List className={classes.root}>
+    //       {listItems}
+    //       </List>
+    //     </Card>
+    <div>{listItems}</div>
   );
 }
