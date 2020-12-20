@@ -3,6 +3,7 @@ import "./App.css";
 import SimpleCard from "./Card";
 import PrimarySearchAppBar from "./App-bar";
 import FolderList from "./Folder";
+import PromoterList from "./Promoter";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -25,8 +26,8 @@ function MainBody() {
                     <SimpleCard />
                 </div>
                 <div className="App-right-column">
-                    <header className="App-sub-header"><h3>Veteran Deals</h3></header>
-                    <FolderList />
+                    <header className="App-sub-header"><h3>Veteran Outreach</h3></header>
+                    <PromoterList />
                 </div>
             </main>
             <footer className="App-footer"></footer>
